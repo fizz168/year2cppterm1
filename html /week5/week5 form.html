@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+    <h2>Create Account</h2>
+    <form>
+        <div class="input-group-row">
+            <div class="input-column">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" placeholder="enter your first name" required>
+            </div>
+            <div class="input-column">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="enter your last name">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="enter your email" required>
+        </div>
+
+        <div class="input-group-row">
+            <div class="input-column">
+                <label for="password">Password *</label>
+                <input type="password" id="password" placeholder="enter your password" required>
+            </div>
+            <div class="input-column">
+                <label for="confirm-password">Confirm Password *</label>
+                <input type="password" id="confirm-password" placeholder="enter your password again" required>
+            </div>
+        </div>
+
+        <div class="input-group-row">
+            <div class="input-column">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-column">
+                <label>Hobbies</label>
+                <div class="radio-group">
+                    <input type="checkbox" id="music">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="travel">
+                    <label for="travel">Travel</label>
+                    <input type="checkbox" id="movies">
+                    <label for="movies">Movies</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group-row">
+            <div class="input-column">
+                <label for="income">Source of Income</label>
+                <select id="income">
+                    <option value="employed">Employed</option>
+                    <option value="student">Student</option>
+                    <option value="retired">Retired</option>
+                </select>
+            </div>
+            <div class="input-column age-input">
+                <label for="age">Age</label>
+                <input type="range" id="age" min="18" max="100" value="18" oninput="document.getElementById('age-value').innerText = this.value">
+                <span id="age-value">18</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="profile-picture">Upload Profile Picture</label>
+            <input type="file" id="profile-picture">
+        </div>
+
+        <div class="input-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Create</button>
+    </form>
+</div>
+</body>
+</html>
