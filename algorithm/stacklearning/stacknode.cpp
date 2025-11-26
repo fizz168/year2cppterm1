@@ -55,9 +55,11 @@ void print(){
 };
 int main(){
     Stack s;
-    s.push(5);
-    s.push(4);
-    s.push(6);
+    // s.push(5);
+    // s.push(4);
+    // s.push(6);
+    // s.peek();
+    cout<< "is stack empty :" <<s.isempty()<<endl;
     s.peek();
     s.print();
 }
