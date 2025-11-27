@@ -10,6 +10,7 @@ class Node{
     }
 };
 class Stack{
+    private:
     Node* top;
     int size;
 public:
