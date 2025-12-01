@@ -1,19 +1,7 @@
 // no one use this shit lmao 
 #include<iostream>
 using namespace std;
-void bubblesort(int arr[], int n){ // time complexity is o(n^2)
-    for(int i = 0; i < n - 1; i++){
-        
-        for(int j = n; j < n - 1 - i; j++){
-            if(arr[j] > arr[j+1]){// handle the swap
-                swap(arr[j], arr[j+1]); // handle the swap
-                
-            }
-        }
 
-    }
-  
-}
 void selectionSort(int arr[], int n){ // time complexity o(n^2)
     for(int i = 0; i < n - 1; i++){
     int smallestIndex = i; //unsorted part
@@ -25,19 +13,6 @@ void selectionSort(int arr[], int n){ // time complexity o(n^2)
     swap(arr[i], arr[smallestIndex]);// swap between unsorted and the smallest element
     }
 }
-void insertionsort(int arr[], int n){
-    for(int i = 1; i < n; i++){
-        int cur = arr[i];
-        int prv = i - 1;
-        while(prv >= 0 && arr[prv] > cur){
-            arr[prv + 1] = arr[prv];
-            prv++;
-        }
-        arr[prv + 1] = cur;//placing cur element in it correct position
-    }
-
-}
-
 void printArr(int arr[], int n){
     for(int i = 0; i < n ; i++){
         cout<<arr[i]<< " "<<endl;
